@@ -1,0 +1,27 @@
+{
+  "name": "nextjs-practice",
+  "version": "1.0.0",
+  "description": "nextjs practice",
+  "main": "index.js",
+  "scripts": {
+    "lint:es": "eslint .",
+    "lint:es:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "goatFE",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@titicaca/eslint-config-triple": "^5.1.1",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0",
+    "typescript": "^5.3.3"
+  }
+}
