@@ -4,6 +4,9 @@ const nextConfig = {
     poweredByHeader: false,
     eslint: {
         ignoreDuringBuilds: true,
+    },
+    compiler: {
+        styledComponents: true
     }
 }
 
