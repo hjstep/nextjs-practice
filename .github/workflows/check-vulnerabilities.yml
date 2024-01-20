@@ -1,0 +1,24 @@
+name: Check site vulnerabilities
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: 19
+      - name: install dependencies
+        run: npm i
+      - name: build
+        run: npm run build
+      - name: start
+        run: npm start
+      - name: Check javascript library vulnerabilities
+        uses: lirantal/is-website-vulnerable@master
+        with:
+          scan-url: 'http://localhost:3000/'
