@@ -19,6 +19,6 @@ jobs:
       - name: start
         run: npm start
       - name: Check javascript library vulnerabilities
-        uses: lirantal/is-website-vulnerable@master
+        uses: lirantal/is-website-vulnerable@main
         with:
           scan-url: 'http://localhost:3000/'
